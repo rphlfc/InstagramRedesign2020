@@ -8,22 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedViewIndex = 0
+    
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.9506489635, green: 0.9649930596, blue: 0.9777397513, alpha: 1)).edgesIgnoringSafeArea(.all)
             
-            VStack {
-                CustomNavigationView()
-                
-                ScrollView(.vertical, showsIndicators: false) {
-                    StoriesView()
-                
-                    PostsView()
-                }
+            if selectedViewIndex == 0 {
+                HomeView()
+            } else if selectedViewIndex == 4 {
+                ProfileView()
             }
-            .edgesIgnoringSafeArea(.bottom)
             
-            CustomTabView()
+            CustomTabView(selectedIndex: self.$selectedViewIndex)
         }
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomTabView: View {
-    @State var selectedIndex: Int = 0
+    @Binding var selectedIndex: Int
     
     var body: some View {
         VStack {
@@ -62,7 +62,7 @@ struct CustomTabView: View {
                 Button(action: {
                     self.selectedIndex = 4
                 }, label: {
-                    Image(systemName: "person")
+                    Image(systemName: self.selectedIndex == 4 ? "person.fill" : "person")
                         .foregroundColor(self.selectedIndex == 4 ? Color.black : Color(#colorLiteral(red: 0.7788327932, green: 0.8124979138, blue: 0.8336980939, alpha: 1)))
                 })
             }
@@ -80,6 +80,6 @@ struct CustomTabView: View {
 
 struct CustomTabView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTabView()
+        CustomTabView(selectedIndex: .constant(3))
     }
 }
