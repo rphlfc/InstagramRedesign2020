@@ -42,7 +42,7 @@ struct CustomNavigationView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 110)
-                .foregroundColor(Color(#colorLiteral(red: 0.04312910885, green: 0.04314244539, blue: 0.04312622547, alpha: 1)))
+                .foregroundColor(Color("logo"))
         }
     }
 }

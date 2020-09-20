@@ -15,11 +15,11 @@ struct StoriesView: View {
                     Button(action: {}, label: {
                         Image(systemName: "plus")
                             .font(.system(size: 18, weight: .bold))
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                            .foregroundColor(Color("plus"))
                             .frame(width: 68, height: 68)
                             .background(
                                 RoundedRectangle(cornerRadius: 26)
-                                    .strokeBorder(Color(#colorLiteral(red: 0.8612819314, green: 0.8947748542, blue: 0.9203428626, alpha: 1)), lineWidth: 2)
+                                    .strokeBorder(Color(#colorLiteral(red: 0.862745098, green: 0.8941176471, blue: 0.9215686275, alpha: 1)), lineWidth: 2)
                                     .foregroundColor(Color(#colorLiteral(red: 0.9389725327, green: 0.9531454444, blue: 0.9702789187, alpha: 1)))
                             )
                     })

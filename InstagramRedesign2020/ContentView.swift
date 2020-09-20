@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.9506489635, green: 0.9649930596, blue: 0.9777397513, alpha: 1)).edgesIgnoringSafeArea(.all)
+            Color("background").edgesIgnoringSafeArea(.all)
             
             if selectedViewIndex == 0 {
                 HomeView()

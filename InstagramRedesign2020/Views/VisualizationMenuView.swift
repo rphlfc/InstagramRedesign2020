@@ -76,7 +76,7 @@ struct VisualizationMenuSelectorView: View {
                 }, label: {
                     Image(systemName: self.selectedIndex == i ? "\(self.items[i]).fill" : self.items[i])
                         .font(.system(size: 24))
-                        .foregroundColor(self.selectedIndex == i ? Color.black : Color(#colorLiteral(red: 0.7466882467, green: 0.7851133943, blue: 0.8106113076, alpha: 1)))
+                        .foregroundColor(self.selectedIndex == i ? Color("selected") : Color(#colorLiteral(red: 0.7466882467, green: 0.7851133943, blue: 0.8106113076, alpha: 1)))
                 })
                 
                 Spacer()

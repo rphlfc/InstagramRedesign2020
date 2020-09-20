@@ -15,7 +15,7 @@ struct CategoriesView: View {
                     Button(action: {}, label: {
                         Image(systemName: "plus")
                             .font(.system(size: 18, weight: .bold))
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                            .foregroundColor(Color("plus"))
                             .frame(width: 68, height: 68)
                             .background(
                                 RoundedRectangle(cornerRadius: 26)
