@@ -16,6 +16,8 @@ struct ContentView: View {
             
             if selectedViewIndex == 0 {
                 HomeView()
+            } else if selectedViewIndex == 3 {
+                ActivityView()
             } else if selectedViewIndex == 4 {
                 ProfileView()
             }
@@ -30,5 +32,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-
